@@ -9,10 +9,6 @@ import elements.Missile;
 import elements.Powershot;
 import managers.Manager;
 import EnemyShips.Enemyship;
-import greenfoot.Actor;
-import greenfoot.Greenfoot;
-import greenfoot.GreenfootImage;
-import greenfoot.GreenfootSound;
 
 public class Player1 extends Actor implements Players {
 	public int counter;

@@ -149,7 +149,7 @@ public abstract class GeneralControls {
 
         x += dx;
         y += dy;
-       // r += dr;
+        r += dr;
 
     }
 

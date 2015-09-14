@@ -9,8 +9,6 @@ import elements.Missile;
 import elements.Powershot;
 import managers.Manager;
 import EnemyShips.Enemyship;
-import greenfoot.Actor;
-import greenfoot.GreenfootImage;
 
 public class EdgeCheck extends Actor {
 	int w;

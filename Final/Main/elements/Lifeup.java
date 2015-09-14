@@ -1,8 +1,5 @@
 package elements;
 
-import greenfoot.Actor;
-import greenfoot.GreenfootSound;
-
 public class Lifeup extends Actor{
 	GreenfootSound sound = new GreenfootSound("Sounds/powerup.wav");
 	public static boolean collected = false;

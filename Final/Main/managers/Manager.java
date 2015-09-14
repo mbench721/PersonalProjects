@@ -8,15 +8,11 @@ import outOfWorld.EdgeCheck;
 import elements.Asteroid;
 import elements.Lifeup;
 import elements.Powershot;
-import enums.Direction;
 import spawning.SpawnPoints;
 import EnemyShips.*;
 import PlayersandDisplay.Player1;
 import PlayersandDisplay.Player2;
 import PlayersandDisplay.Score;
-import greenfoot.Actor;
-import greenfoot.GreenfootSound;
-import greenfoot.World;
 
 
 public class Manager extends Actor {

@@ -1,7 +1,5 @@
 package main;
 
-import greenfoot.export.GreenfootScenarioMain;
-
 import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.event.ActionEvent;
@@ -12,8 +10,6 @@ import java.io.IOException;
 import javax.swing.JButton;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
-import greenfoot.export.GreenfootScenarioMain;
-import greenfoot.util.GreenfootUtil;
 
 
 public class StartMenu extends JPanel {

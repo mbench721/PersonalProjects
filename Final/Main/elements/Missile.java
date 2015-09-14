@@ -1,6 +1,4 @@
 package elements;
-import greenfoot.Actor;
-import greenfoot.Greenfoot;
 
 public class Missile extends Actor {
 

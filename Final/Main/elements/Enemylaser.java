@@ -1,5 +1,4 @@
 package elements;
-import greenfoot.Actor;
 
 
 public class Enemylaser extends Actor{

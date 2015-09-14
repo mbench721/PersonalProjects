@@ -11,8 +11,6 @@ import elements.Missile;
 import managers.Manager;
 import PlayersandDisplay.Player1;
 import PlayersandDisplay.Score;
-import greenfoot.Actor;
-import greenfoot.GreenfootImage;
 
 public class Enemyship extends Actor implements Move {
 	public Random rgen = new Random();

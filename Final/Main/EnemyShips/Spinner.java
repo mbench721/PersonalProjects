@@ -2,7 +2,6 @@ package EnemyShips;
 
 import interfaces.Move;
 import enemyControllers.SpinController;
-import greenfoot.GreenfootImage;
 
 public class Spinner extends Enemys {
 	

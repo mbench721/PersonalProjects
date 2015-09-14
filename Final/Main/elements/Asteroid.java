@@ -2,9 +2,6 @@ package elements;
 import java.util.Random;
 
 import managers.Manager;
-import greenfoot.Actor;
-import greenfoot.GreenfootImage;
-import greenfoot.World;
 
 public class Asteroid extends Actor{
 	private World world;

@@ -3,10 +3,6 @@ package spawning;
 import java.awt.Color;
 import java.util.ArrayList;
 
-import greenfoot.Actor;
-import greenfoot.GreenfootImage;
-import greenfoot.World;
-
 public class SpawnPoints extends Actor {
 	
 	private int width;

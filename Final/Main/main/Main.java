@@ -2,7 +2,6 @@ package main;
 
 import java.awt.Dimension;
 import javax.swing.JFrame;
-import greenfoot.util.GreenfootUtil;
 
 public class Main extends GreenfootUtil {
 	

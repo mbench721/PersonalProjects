@@ -1,6 +1,4 @@
 package elements;
-import greenfoot.Actor;
-import greenfoot.GreenfootSound;
 
 public class Laser extends Actor{
 	private int size = 20;

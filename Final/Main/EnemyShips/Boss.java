@@ -4,11 +4,6 @@ import elements.Enemylaser;
 import elements.Explosion;
 import elements.Laser;
 import elements.Missile;
-import enums.Movement;
-import greenfoot.Actor;
-import greenfoot.GreenfootImage;
-import greenfoot.GreenfootSound;
-
 import java.util.Random;
 
 import PlayersandDisplay.Player1;

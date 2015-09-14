@@ -1,8 +1,5 @@
 package elements;
 
-import greenfoot.Actor;
-import greenfoot.GreenfootImage;
-
 public class Bossbullet extends Actor {
 	private GreenfootImage bossPic = new GreenfootImage("Images/bossBullet.png");
 	private int size = 25;

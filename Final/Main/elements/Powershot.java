@@ -1,6 +1,4 @@
 package elements;
-import greenfoot.Actor;
-import greenfoot.GreenfootSound;
 
 public class Powershot extends Actor{
 	GreenfootSound sound = new GreenfootSound("sounds/powerup.wav");

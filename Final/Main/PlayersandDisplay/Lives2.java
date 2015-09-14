@@ -1,7 +1,5 @@
 package PlayersandDisplay;
 import java.awt.Color;
-import greenfoot.Actor;
-import greenfoot.GreenfootImage;
 
 public class Lives2 extends Actor{
 	public static int player2Lives = 3;

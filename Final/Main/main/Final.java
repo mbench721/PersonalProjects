@@ -9,11 +9,6 @@ import javax.swing.JOptionPane;
 
 import managers.Manager;
 import PlayersandDisplay.*;
-import greenfoot.Actor;
-import greenfoot.Greenfoot;
-import greenfoot.GreenfootImage;
-import greenfoot.GreenfootSound;
-import greenfoot.World;
 
 public class Final extends World  {
 	

@@ -4,10 +4,6 @@ import javax.swing.JOptionPane;
 import main.Final;
 import EnemyShips.Boss;
 import PlayersandDisplay.*;
-import greenfoot.Actor;
-import greenfoot.Greenfoot;
-import greenfoot.GreenfootImage;
-import greenfoot.GreenfootSound;
 
 public class Explosion extends Actor {
 	private GreenfootImage image;

@@ -5,6 +5,7 @@ import java.util.List;
 
 
 import controllers.PlayerController;
+import javafx.animation.AnimationTimer;
 import javafx.scene.Scene;
 import javafx.scene.image.Image;
 import mobile.Deployable;
@@ -15,7 +16,7 @@ public class SpawnManager {
 
 	private Scene scene;
 	private GameManager manage;
-	private List<Deployable> players = new ArrayList<>();
+	private List<Player> players = new ArrayList<>();
 	Image playerImage;
 
 	public SpawnManager(Scene s,GameManager m){
@@ -23,11 +24,49 @@ public class SpawnManager {
 		this.scene = s;
 		//this.loadGame();
 		createPlayers(manage);
+		//loadGame();
 	}
 	 private void loadGame() {
-	        playerImage = new Image( getClass().getResource("src/application/player1.png").toExternalForm());
-	        //enemyImage = new Image( getClass().getResource("enemy1.png").toExternalForm());
-	    }
+		 AnimationTimer gameLoop = new AnimationTimer() {
+
+	         @Override
+	         public void handle(long now) {
+
+	             // player input
+	             players.forEach(player -> player.processInput());
+	          //  spawnStars(true);
+	             // add random enemies
+	            // spawnEnemies( true);
+
+	             // movement
+	             players.forEach(player -> player.move());
+	          //   enemies.forEach(enemy -> enemy.move());
+	           //  scroll.forEach(enemy -> enemy.move());
+
+	             // check collisions
+	            // checkCollisions();
+
+	             // update ships in scene
+	             players.forEach(player -> player.updateUI());
+	            // enemies.forEach(enemy -> enemy.updateUI());
+	            // scroll.forEach(enemy -> enemy.updateUI());
+
+	             // check if ship can be removed
+	            // enemies.forEach(enemy -> enemy.checkRemovability());
+	             //scroll.forEach(enemy -> enemy.checkRemovability());
+
+	             // remove removables from list, layer, etc
+	            // removeShips( enemies);
+
+	             // update score, health, etc
+	            // updateScore();
+	         }
+
+	     };
+	     gameLoop.start();
+
+	 }
+	    
 	private void createPlayers(GameManager g) {
 
 		// player input
@@ -37,8 +76,8 @@ public class SpawnManager {
 		pControl.addListeners(); // TODO: remove listeners on game over
 
 		//Image image = playerImage;
-        playerImage = new Image("player1.png");
-
+		 playerImage = new Image("player1.png");
+		
 		// center horizontally, position at 70% vertically
 		double x = (Settings.SCENE_WIDTH - playerImage.getWidth()) / 2.0;
 		double y = Settings.SCENE_HEIGHT * 0.7;

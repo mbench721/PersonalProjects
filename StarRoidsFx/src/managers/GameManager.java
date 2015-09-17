@@ -3,7 +3,7 @@ package managers;
 import java.util.ArrayList;
 import java.util.List;
 
-
+import javafx.animation.AnimationTimer;
 import javafx.application.Application;
 import javafx.scene.Group;
 import javafx.scene.Scene;
@@ -15,6 +15,7 @@ import mobile.Deployable;
 
 public class GameManager {
 	private Scene scene;
+	private Group root;
 	private SpawnManager spawn;
 	Pane playfieldLayer;
     Pane scoreLayer;
@@ -22,9 +23,9 @@ public class GameManager {
    
    
 	private StartMenu start;
-	public GameManager(Scene s){
+	public GameManager(Group s){
 		
-		this.scene = s;
+		this.root = s;
 		//createStartMenu();
 		setLayers();
 		createSpawnManage();
@@ -36,17 +37,20 @@ public class GameManager {
 	}
 	public void setLayers(){
 		
-		Group root = new Group();
+		
 		backSpace = new Pane();
         playfieldLayer = new Pane();
         scoreLayer = new Pane();
         root.getChildren().add(backSpace);
         root.getChildren().add( playfieldLayer);
         root.getChildren().add( scoreLayer);
+        
        
 	}
 	public void createSpawnManage(){
 		spawn = new SpawnManager(scene,this);
+		
 	}
+	
 
 }

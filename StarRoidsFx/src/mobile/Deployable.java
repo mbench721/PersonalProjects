@@ -7,6 +7,7 @@ import javafx.scene.layout.Pane;
 public abstract class Deployable {
 	protected Image image;
 	private ImageView view;
+	private Pane layer;
 	protected double x;
 	protected double y;
 	double dx;
@@ -22,6 +23,7 @@ public abstract class Deployable {
 	
 	public Deployable(Pane layer, Image image, double x, double y, double r, double dx, double dy, double dr, double health, double damage){
 		
+		  this.layer = layer;
 		this.x = x;
         this.y = y;
 		this.dx = dx;
@@ -35,6 +37,7 @@ public abstract class Deployable {
         this.view.setRotate(r);
         this.w = image.getWidth(); // imageView.getBoundsInParent().getWidth();
         this.h = image.getHeight(); // imageView.getBoundsInParent().getHeight();
+        addToLayer();
 	}
 	public void move() {
 
@@ -46,6 +49,13 @@ public abstract class Deployable {
         //r += dr;
 
     }
+	  
+
+
+
+public void addToLayer() {
+    this.layer.getChildren().add(this.view);
+}
 	public void move(double m){
 	
 	}
@@ -85,7 +95,12 @@ public abstract class Deployable {
 		this.y = y;
 	}
 	public abstract void checkRemovability();
-		
+	 public void updateUI() {
+
+	        view.relocate(x, y);
+	        view.setRotate(r);
+
+	    }
 		
 	
 

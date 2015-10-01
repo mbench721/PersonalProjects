@@ -23,10 +23,9 @@ public class GameManager {
    
    
 	private StartMenu start;
-	public GameManager(Group s){
-		
-		this.root = s;
-		//createStartMenu();
+	public GameManager(Scene s,Group g){
+		this.scene = s;
+		this.root = g;
 		setLayers();
 		createSpawnManage();
 		
@@ -36,7 +35,6 @@ public class GameManager {
 		start = new StartMenu(scene);
 	}
 	public void setLayers(){
-		
 		
 		backSpace = new Pane();
         playfieldLayer = new Pane();

@@ -13,7 +13,7 @@ public class Player extends Deployable {
 	double playerShipMaxX;
 	double playerShipMinY;
 	double playerShipMaxY;
-
+	RotateTransition turn;
 	PlayerController input;
 
 	double speed;
@@ -40,6 +40,8 @@ public class Player extends Deployable {
 
 	}
 	public void turn(double t){
+		//turn = new RotateTransition(Duration.millis(750));
+	//	turn.setToAngle(t);
 		
 		this.r += t;
 			      

@@ -22,9 +22,9 @@ public class SpawnManager {
 	public SpawnManager(Scene s,GameManager m){
 		this.manage = m;
 		this.scene = s;
-		//this.loadGame();
+		loadGame();
 		createPlayers(manage);
-		//loadGame();
+		
 	}
 	 private void loadGame() {
 		 AnimationTimer gameLoop = new AnimationTimer() {

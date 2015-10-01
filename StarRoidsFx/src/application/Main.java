@@ -15,11 +15,9 @@ public class Main extends Application {
 	@Override
 	public void start(Stage primaryStage) {
 		try {
-			//BorderPane root = new BorderPane();
 			Group root = new Group();
-			
-			game = new GameManager(root);
 			Scene scene = new Scene( root, Settings.SCENE_WIDTH, Settings.SCENE_HEIGHT,Color.BLACK);
+			game = new GameManager(scene,root);
 			primaryStage.setScene(scene);
 			primaryStage.show();
 			
